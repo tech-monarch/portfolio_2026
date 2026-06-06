@@ -6,24 +6,42 @@ import Link from "next/link";
 
 function MoonIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
     </svg>
   );
 }
 
 function SunIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="5"/>
-      <line x1="12" y1="1" x2="12" y2="3"/>
-      <line x1="12" y1="21" x2="12" y2="23"/>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-      <line x1="1" y1="12" x2="3" y2="12"/>
-      <line x1="21" y1="12" x2="23" y2="12"/>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="5" />
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
     </svg>
   );
 }
@@ -68,7 +86,8 @@ export default function Navigation() {
     { label: "Contact", href: "#contact" },
   ];
 
-  const resumeHref = "https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing";
+  const resumeHref =
+    "https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing";
 
   return (
     <>
@@ -82,11 +101,13 @@ export default function Navigation() {
         <nav
           className="pointer-events-auto flex items-center gap-1 px-3 py-2 rounded-2xl"
           style={{
-            backgroundColor: "color-mix(in srgb, var(--bg-base) 80%, transparent)",
+            backgroundColor:
+              "color-mix(in srgb, var(--bg-base) 80%, transparent)",
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",
             border: "1px solid var(--line-strong)",
-            boxShadow: "0 4px 32px rgba(0,0,0,0.18), 0 1px 0 rgba(255,255,255,0.04) inset",
+            boxShadow:
+              "0 4px 32px rgba(0,0,0,0.18), 0 1px 0 rgba(255,255,255,0.04) inset",
           }}
           aria-label="Primary navigation"
         >
@@ -94,8 +115,12 @@ export default function Navigation() {
           <Link
             href="/"
             className="flex items-center px-1.5 py-1.5 rounded-xl transition-all duration-200 mr-2"
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = "var(--card-hover)")}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = "transparent")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = "var(--card-hover)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = "transparent")
+            }
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -107,7 +132,10 @@ export default function Navigation() {
           </Link>
 
           {/* Separator */}
-          <div className="w-px h-4 hidden md:block" style={{ backgroundColor: "var(--line-strong)" }} />
+          <div
+            className="w-px h-4 hidden md:block"
+            style={{ backgroundColor: "var(--line-strong)" }}
+          />
 
           {/* Nav links — desktop */}
           <div className="hidden md:flex items-center gap-0.5 ml-1">
@@ -120,13 +148,17 @@ export default function Navigation() {
                 transition={{ delay: 0.05 + i * 0.04, duration: 0.35 }}
                 className="text-[12.5px] tracking-wide font-medium px-3 py-1.5 rounded-xl transition-all duration-200"
                 style={{ color: "var(--fg-muted)" }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.color = "var(--fg-primary)";
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "var(--card-hover)";
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.color =
+                    "var(--fg-primary)";
+                  (e.currentTarget as HTMLElement).style.backgroundColor =
+                    "var(--card-hover)";
                 }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.color = "var(--fg-muted)";
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.color =
+                    "var(--fg-muted)";
+                  (e.currentTarget as HTMLElement).style.backgroundColor =
+                    "transparent";
                 }}
               >
                 {link.label}
@@ -135,7 +167,10 @@ export default function Navigation() {
           </div>
 
           {/* Separator */}
-          <div className="w-px h-4 hidden md:block ml-1" style={{ backgroundColor: "var(--line-strong)" }} />
+          <div
+            className="w-px h-4 hidden md:block ml-1"
+            style={{ backgroundColor: "var(--line-strong)" }}
+          />
 
           {/* Resume link — desktop */}
           <motion.a
@@ -147,20 +182,26 @@ export default function Navigation() {
             transition={{ delay: 0.35, duration: 0.35 }}
             className="hidden md:inline-flex items-center gap-1.5 text-[12.5px] tracking-wide font-medium px-3 py-1.5 rounded-xl transition-all duration-200"
             style={{ color: "var(--fg-muted)" }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.color = "var(--fg-primary)";
-              (e.currentTarget as HTMLElement).style.backgroundColor = "var(--card-hover)";
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.color =
+                "var(--fg-primary)";
+              (e.currentTarget as HTMLElement).style.backgroundColor =
+                "var(--card-hover)";
             }}
-            onMouseLeave={e => {
+            onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.color = "var(--fg-muted)";
-              (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+              (e.currentTarget as HTMLElement).style.backgroundColor =
+                "transparent";
             }}
           >
-            Résumé ↗
+            Résumé <span aria-hidden="true">→</span>
           </motion.a>
 
           {/* Separator */}
-          <div className="w-px h-4 hidden md:block ml-1" style={{ backgroundColor: "var(--line-strong)" }} />
+          <div
+            className="w-px h-4 hidden md:block ml-1"
+            style={{ backgroundColor: "var(--line-strong)" }}
+          />
 
           {/* Theme toggle */}
           <motion.button
@@ -170,13 +211,16 @@ export default function Navigation() {
             onClick={() => setDark(!dark)}
             className="w-8 h-8 rounded-xl flex items-center justify-center transition-all duration-200 ml-1"
             style={{ color: "var(--fg-muted)" }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.color = "var(--fg-primary)";
-              (e.currentTarget as HTMLElement).style.backgroundColor = "var(--card-hover)";
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.color =
+                "var(--fg-primary)";
+              (e.currentTarget as HTMLElement).style.backgroundColor =
+                "var(--card-hover)";
             }}
-            onMouseLeave={e => {
+            onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.color = "var(--fg-muted)";
-              (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+              (e.currentTarget as HTMLElement).style.backgroundColor =
+                "transparent";
             }}
             aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
           >
@@ -200,8 +244,12 @@ export default function Navigation() {
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
             style={{ color: "var(--fg-muted)" }}
-            onMouseEnter={e => (e.currentTarget.style.backgroundColor = "var(--card-hover)")}
-            onMouseLeave={e => (e.currentTarget.style.backgroundColor = "transparent")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = "var(--card-hover)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = "transparent")
+            }
           >
             {[
               menuOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 },
@@ -229,7 +277,10 @@ export default function Navigation() {
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 md:hidden"
-            style={{ backgroundColor: "color-mix(in srgb, var(--bg-base) 94%, transparent)" }}
+            style={{
+              backgroundColor:
+                "color-mix(in srgb, var(--bg-base) 94%, transparent)",
+            }}
             onClick={() => setMenuOpen(false)}
           >
             {navLinks.map((link, i) => (
@@ -239,7 +290,11 @@ export default function Navigation() {
                 initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -12, filter: "blur(4px)" }}
-                transition={{ delay: i * 0.06, duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  delay: i * 0.06,
+                  duration: 0.38,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 onClick={() => setMenuOpen(false)}
                 className="font-display text-4xl font-700 tracking-tight transition-opacity duration-200 hover:opacity-50"
                 style={{ color: "var(--fg-primary)" }}
@@ -254,12 +309,16 @@ export default function Navigation() {
               initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               exit={{ opacity: 0, y: -12, filter: "blur(4px)" }}
-              transition={{ delay: navLinks.length * 0.06, duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                delay: navLinks.length * 0.06,
+                duration: 0.38,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               onClick={() => setMenuOpen(false)}
               className="font-display text-4xl font-700 tracking-tight transition-opacity duration-200 hover:opacity-50"
               style={{ color: "var(--fg-primary)" }}
             >
-              Résumé ↗
+              Résumé <span aria-hidden="true">→</span>
             </motion.a>
             <motion.div
               initial={{ opacity: 0 }}
@@ -270,8 +329,11 @@ export default function Navigation() {
               {[
                 { label: "X / Twitter", href: "https://x.com/_Tech_Monarch" },
                 { label: "GitHub", href: "https://github.com/tech-monarch" },
-                { label: "LinkedIn", href: "https://www.linkedin.com/in/odianonsen/" },
-              ].map(s => (
+                {
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/odianonsen/",
+                },
+              ].map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
@@ -279,8 +341,12 @@ export default function Navigation() {
                   rel="noopener noreferrer"
                   className="text-xs uppercase tracking-widest transition-colors duration-200"
                   style={{ color: "var(--fg-ghost)" }}
-                  onMouseEnter={e => (e.currentTarget.style.color = "var(--fg-primary)")}
-                  onMouseLeave={e => (e.currentTarget.style.color = "var(--fg-ghost)")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "var(--fg-primary)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "var(--fg-ghost)")
+                  }
                 >
                   {s.label}
                 </a>

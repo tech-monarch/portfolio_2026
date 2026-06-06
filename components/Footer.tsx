@@ -39,7 +39,7 @@ export default function Footer() {
               { label: "GitHub", href: "https://github.com/tech-monarch", rel: "me noopener noreferrer" },
               { label: "LinkedIn", href: "https://www.linkedin.com/in/odianonsen/", rel: "me noopener noreferrer" },
               { label: "Pantheon", href: "https://launchbase.one", rel: "noopener noreferrer" },
-              { label: "Résumé ↗", href: "https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing", rel: "noopener noreferrer" },
+              { label: "Résumé <span aria-hidden="true">→</span>", href: "https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing", rel: "noopener noreferrer" },
               { label: "Contact", href: "#contact", rel: undefined },
             ].map((link) => (
               <a
