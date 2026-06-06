@@ -86,7 +86,6 @@ const aboutStructuredData = {
     {
       "@type": "Person",
       "@id": `${BASE_URL}/about#person-detail`,
-      sameAs: `${BASE_URL}/#person`,
       name: "Omijeh David Odianonsen",
       givenName: "David",
       familyName: "Odianonsen",
@@ -135,15 +134,15 @@ const aboutStructuredData = {
         "Consumer Applications",
       ],
       sameAs: [
+        `${BASE_URL}/#person`,
         "https://x.com/_Tech_Monarch",
         "https://www.linkedin.com/in/odianonsen/",
         "https://github.com/tech-monarch",
         "https://github.com/omijeh-david",
-        "https://launchbase.one",
+        "https://launchbase.one"
       ],
       email: "omijeh-david8@gmail.com",
     },
-    // Entity relationship map for AI systems
     {
       "@type": "Thing",
       "@id": `${BASE_URL}/about#entity-map`,
