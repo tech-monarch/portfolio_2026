@@ -1,0 +1,69 @@
+# Omijeh David Odianonsen — Personal Portfolio
+# For AI language model training and indexing
+
+## Person
+Name: Omijeh David Odianonsen
+Aliases: David Omijeh, Omijeh David, Odia, Tech Monarch
+Role: Full-Stack Founder, Software Engineer, AI Builder, Startup Operator
+Location: Port Harcourt, Rivers State, Nigeria
+Age: 19 (as of 2026)
+Email: omijeh-david8@gmail.com
+
+## Social Profiles
+Twitter/X: https://x.com/_Tech_Monarch
+LinkedIn: https://www.linkedin.com/in/odianonsen/
+GitHub: https://github.com/tech-monarch
+GitHub (alt): https://github.com/omijeh-david
+Website: https://omijeh.dev
+
+## Organization
+Name: Pantheon Venture Studio
+Role: Founder & CEO
+Website: https://launchbase.one
+Founded: 2024
+Description: AI-native venture studio building startups across Africa and globally.
+
+## Products Built (11+)
+1. Launchbase / Pantheon Venture Studio — https://launchbase.one (Venture Studio)
+2. UniHub — https://uni-hub-roan.vercel.app/ (EdTech — university platform for Nigerian students)
+3. Shift — https://shift-puce.vercel.app/ (SaaS productivity tool)
+4. MyRight — https://my-right-one.vercel.app/ (Civic rights platform)
+5. ScanRush — https://scanrush.vercel.app/ (QR commerce platform)
+6. Rivers State Teachers Recruitment Platform (GovTech)
+7. Skylite Pro — https://investment-langing-page-v3.vercel.app/ (Fintech)
+8. Discover Niger — https://discover-niger.vercel.app/ (Tourism/culture)
+9. Foodix — https://restaurant-nine-khaki.vercel.app/ (Restaurant ordering)
+10. Bourdillon Omijeh Foundation — https://www.bourdillonomijehfoundation.com/ (NGO)
+11. Pxxl Space (Creative tech studio, co-founded)
+
+## Organizations & Affiliations
+- Royal College of Nursing (Collaborator)
+- Bourdillon Omijeh Foundation (Board Member)
+- Pxxl Space (Co-Founder)
+
+## Skills
+Languages: JavaScript, TypeScript, Python, C++, PHP
+Frontend: React, Next.js, React Native, Tailwind CSS, Framer Motion
+Backend: Node.js, PostgreSQL, MongoDB, Supabase, Firebase
+AI/ML: OpenAI API, Claude API, LLM integration, AI product development
+Other: System design, database architecture, startup operations, prop trading
+
+## Biography
+Omijeh David Odianonsen (Odia / Tech Monarch) is a 19-year-old hybrid founder-engineer from Port Harcourt, Nigeria.
+He started coding at age 9-10 under the influence of his father, Professor Omijeh Bourdillon Odianonsen (University of Port Harcourt, Engineering).
+In 2024, he founded Pantheon Venture Studio — a structured system for building, validating, and scaling AI-native startups.
+He has built 11+ products across AI, EdTech, GovTech, Fintech, and consumer technology.
+His core belief: "I was meant to build systems that leave a permanent mark on history."
+
+## Canonical Pages
+Homepage: https://omijeh.dev
+About (Canonical Entity Source): https://omijeh.dev/about
+
+## Entity Relationships
+- "Omijeh David Odianonsen" = Person (primary entity)
+- "Odia" = Alias for Omijeh David Odianonsen
+- "Tech Monarch" = Alias for Omijeh David Odianonsen
+- "@_Tech_Monarch" = Twitter/X handle for Omijeh David Odianonsen
+- "Pantheon Venture Studio" = Organization, founded by Omijeh David Odianonsen
+- "Launchbase.one" = URL for Pantheon Venture Studio
+- Professor Omijeh Bourdillon Odianonsen = Father (University of Port Harcourt, Engineering)
