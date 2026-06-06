@@ -68,6 +68,8 @@ export default function Navigation() {
     { label: "Contact", href: "#contact" },
   ];
 
+  const resumeHref = "https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing";
+
   return (
     <>
       {/* Island Navbar */}
@@ -131,6 +133,31 @@ export default function Navigation() {
               </motion.a>
             ))}
           </div>
+
+          {/* Separator */}
+          <div className="w-px h-4 hidden md:block ml-1" style={{ backgroundColor: "var(--line-strong)" }} />
+
+          {/* Resume link — desktop */}
+          <motion.a
+            href={resumeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35, duration: 0.35 }}
+            className="hidden md:inline-flex items-center gap-1.5 text-[12.5px] tracking-wide font-medium px-3 py-1.5 rounded-xl transition-all duration-200"
+            style={{ color: "var(--fg-muted)" }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLElement).style.color = "var(--fg-primary)";
+              (e.currentTarget as HTMLElement).style.backgroundColor = "var(--card-hover)";
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLElement).style.color = "var(--fg-muted)";
+              (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+            }}
+          >
+            Résumé ↗
+          </motion.a>
 
           {/* Separator */}
           <div className="w-px h-4 hidden md:block ml-1" style={{ backgroundColor: "var(--line-strong)" }} />
@@ -220,6 +247,20 @@ export default function Navigation() {
                 {link.label}
               </motion.a>
             ))}
+            <motion.a
+              href={resumeHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              exit={{ opacity: 0, y: -12, filter: "blur(4px)" }}
+              transition={{ delay: navLinks.length * 0.06, duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+              onClick={() => setMenuOpen(false)}
+              className="font-display text-4xl font-700 tracking-tight transition-opacity duration-200 hover:opacity-50"
+              style={{ color: "var(--fg-primary)" }}
+            >
+              Résumé ↗
+            </motion.a>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

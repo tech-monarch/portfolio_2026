@@ -139,6 +139,17 @@ export default function Hero() {
               >
                 View Startups
               </a>
+              <a
+                href="https://docs.google.com/document/d/1BrJGoiyBuhbgpX7ZHlLcGmECVBVyoi2_LuRlZK8RHRU/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+                style={{ border: "1px solid var(--line-strong)", color: "var(--fg-secondary)" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = "var(--fg-muted)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = "var(--line-strong)"; }}
+              >
+                Résumé ↗
+              </a>
             </motion.div>
           </div>
 
