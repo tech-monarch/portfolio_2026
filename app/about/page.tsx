@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AboutPageClient from "./AboutPageClient";
 
-const BASE_URL = "https://omijeh.dev";
+const BASE_URL = "https://omijeh-david.verel.app";
 
 export const metadata: Metadata = {
   title: "About — Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch",
@@ -28,7 +28,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "profile",
-    title: "About — Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio Founder",
+    title:
+      "About — Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio Founder",
     description:
       "Canonical biography of Omijeh David Odianonsen — Nigerian full-stack founder, AI builder, and startup operator. Started coding at 9. Founder of Pantheon Venture Studio. 11+ products shipped.",
     url: `${BASE_URL}/about`,
@@ -47,7 +48,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@_Tech_Monarch",
     creator: "@_Tech_Monarch",
-    title: "About Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio",
+    title:
+      "About Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio",
     description:
       "Canonical biography — Nigerian full-stack founder, AI builder, startup operator. Started at 9. 11+ products built.",
     images: ["/omijeh-david-odianonsen-tech-monarch.jpg"],
@@ -72,7 +74,12 @@ const aboutStructuredData = {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-          { "@type": "ListItem", position: 2, name: "About", item: `${BASE_URL}/about` },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "About",
+            item: `${BASE_URL}/about`,
+          },
         ],
       },
     },
@@ -141,7 +148,8 @@ const aboutStructuredData = {
       "@type": "Thing",
       "@id": `${BASE_URL}/about#entity-map`,
       name: "Entity Relationship Map — Omijeh David Odianonsen",
-      description: "Structured entity relationships for AI knowledge graph extraction.",
+      description:
+        "Structured entity relationships for AI knowledge graph extraction.",
       about: [
         {
           "@type": "Person",
@@ -165,7 +173,9 @@ export default function AboutPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutStructuredData),
+        }}
       />
       {/* Machine-readable entity summary for AI crawlers */}
       <div
@@ -182,17 +192,22 @@ export default function AboutPage() {
         }}
         aria-hidden="true"
       >
-        <span itemProp="name">Omijeh David Odianonsen</span>.
-        Aliases: <span itemProp="alternateName">Odia</span>, <span itemProp="alternateName">Tech Monarch</span>.
-        Role: <span itemProp="jobTitle">Full-Stack Founder</span>.
-        Organization: <span itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
+        <span itemProp="name">Omijeh David Odianonsen</span>. Aliases:{" "}
+        <span itemProp="alternateName">Odia</span>,{" "}
+        <span itemProp="alternateName">Tech Monarch</span>. Role:{" "}
+        <span itemProp="jobTitle">Full-Stack Founder</span>. Organization:{" "}
+        <span
+          itemProp="worksFor"
+          itemScope
+          itemType="https://schema.org/Organization"
+        >
           <span itemProp="name">Pantheon Venture Studio</span>
-        </span>.
-        Location: <span itemProp="homeLocation">Port Harcourt, Nigeria</span>.
-        Email: <span itemProp="email">omijeh-david8@gmail.com</span>.
-        Started coding at age 9. Currently 19 years old.
-        Father: Professor Omijeh Bourdillon Odianonsen, University of Port Harcourt.
-        Products shipped: 11+. Sectors: AI, EdTech, GovTech, Fintech, Consumer.
+        </span>
+        . Location: <span itemProp="homeLocation">Port Harcourt, Nigeria</span>.
+        Email: <span itemProp="email">omijeh-david8@gmail.com</span>. Started
+        coding at age 9. Currently 19 years old. Father: Professor Omijeh
+        Bourdillon Odianonsen, University of Port Harcourt. Products shipped:
+        11+. Sectors: AI, EdTech, GovTech, Fintech, Consumer.
       </div>
       <AboutPageClient />
     </>

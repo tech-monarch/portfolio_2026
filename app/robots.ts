@@ -26,7 +26,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://omijeh.dev/sitemap.xml",
-    host: "https://omijeh.dev",
+    sitemap: "https://omijeh-david.verel.app/sitemap.xml",
+    host: "https://omijeh-david.verel.app",
   };
 }

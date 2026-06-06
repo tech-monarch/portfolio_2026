@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const BASE_URL = "https://omijeh.dev";
+const BASE_URL = "https://omijeh-david.verel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
+    default:
+      "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
     template: "%s | Omijeh David Odianonsen",
   },
   description:
@@ -41,7 +42,8 @@ export const metadata: Metadata = {
   creator: "Omijeh David Odianonsen",
   publisher: "Omijeh David Odianonsen",
   category: "Technology",
-  classification: "Software Engineering, Venture Building, Artificial Intelligence",
+  classification:
+    "Software Engineering, Venture Building, Artificial Intelligence",
   robots: {
     index: true,
     follow: true,
@@ -55,7 +57,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "profile",
-    title: "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
+    title:
+      "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
     description:
       "Nigerian full-stack founder, AI builder, and startup operator. Founder of Pantheon Venture Studio. 11+ products shipped across AI, EdTech, GovTech, Fintech, and consumer tech.",
     url: BASE_URL,
@@ -75,7 +78,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@_Tech_Monarch",
     creator: "@_Tech_Monarch",
-    title: "Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio Founder",
+    title:
+      "Omijeh David Odianonsen | Tech Monarch · Pantheon Venture Studio Founder",
     description:
       "Nigerian full-stack founder and AI builder. Founder of Pantheon Venture Studio. 11+ products built across Africa and globally.",
     images: ["/omijeh-david-odianonsen1.jpg"],
@@ -100,7 +104,13 @@ const structuredData = {
       "@type": "Person",
       "@id": `${BASE_URL}/#person`,
       name: "Omijeh David Odianonsen",
-      alternateName: ["David Omijeh", "Omijeh David", "Odia", "Tech Monarch", "Odianonsen"],
+      alternateName: [
+        "David Omijeh",
+        "Omijeh David",
+        "Odia",
+        "Tech Monarch",
+        "Odianonsen",
+      ],
       url: BASE_URL,
       image: {
         "@type": "ImageObject",
@@ -108,7 +118,8 @@ const structuredData = {
         url: `${BASE_URL}/omijeh-david-odianonsen1.jpg`,
         width: 800,
         height: 800,
-        caption: "Omijeh David Odianonsen — Full-Stack Founder and Tech Monarch",
+        caption:
+          "Omijeh David Odianonsen — Full-Stack Founder and Tech Monarch",
       },
       description:
         "Omijeh David Odianonsen, known as Odia and Tech Monarch, is a Nigerian full-stack founder, software engineer, AI builder, startup operator, and founder of Pantheon Venture Studio. He has built 11+ products across AI, EdTech, GovTech, Fintech, and consumer technology, operating from Port Harcourt, Nigeria.",
@@ -184,7 +195,8 @@ const structuredData = {
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
       name: "Omijeh David Odianonsen — Tech Monarch",
-      description: "Personal portfolio and founder profile of Omijeh David Odianonsen, Full-Stack Founder at Pantheon Venture Studio.",
+      description:
+        "Personal portfolio and founder profile of Omijeh David Odianonsen, Full-Stack Founder at Pantheon Venture Studio.",
       publisher: { "@id": `${BASE_URL}/#person` },
       inLanguage: "en-US",
       copyrightYear: 2026,
@@ -227,7 +239,8 @@ const structuredData = {
       applicationCategory: "BusinessApplication",
       author: { "@id": `${BASE_URL}/#person` },
       creator: { "@id": `${BASE_URL}/#person` },
-      description: "Venture studio hub and startup launchpad. Investor hub, co-builder portal, and startup ecosystem showcase for Pantheon Venture Studio.",
+      description:
+        "Venture studio hub and startup launchpad. Investor hub, co-builder portal, and startup ecosystem showcase for Pantheon Venture Studio.",
     },
     // UniHub
     {
@@ -237,7 +250,8 @@ const structuredData = {
       url: "https://uni-hub-roan.vercel.app/",
       applicationCategory: "EducationalApplication",
       author: { "@id": `${BASE_URL}/#person` },
-      description: "Centralised university hub for Nigerian students — courses, resources, collaboration, and campus tools.",
+      description:
+        "Centralised university hub for Nigerian students — courses, resources, collaboration, and campus tools.",
     },
     // MyRight
     {
@@ -247,7 +261,8 @@ const structuredData = {
       url: "https://my-right-one.vercel.app/",
       applicationCategory: "UtilitiesApplication",
       author: { "@id": `${BASE_URL}/#person` },
-      description: "Civic rights platform empowering Nigerian citizens with knowledge of their legal rights and civic entitlements.",
+      description:
+        "Civic rights platform empowering Nigerian citizens with knowledge of their legal rights and civic entitlements.",
     },
     // ScanRush
     {
@@ -257,7 +272,8 @@ const structuredData = {
       url: "https://scanrush.vercel.app/",
       applicationCategory: "BusinessApplication",
       author: { "@id": `${BASE_URL}/#person` },
-      description: "QR-powered commerce and menu platform for restaurants and businesses.",
+      description:
+        "QR-powered commerce and menu platform for restaurants and businesses.",
     },
     // FAQ structured data for AI + voice search
     {
@@ -309,23 +325,34 @@ const structuredData = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#111111" />
         <meta name="color-scheme" content="dark light" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
         <meta name="format-detection" content="telephone=no" />
         {/* Entity / Knowledge Graph hints */}
         <meta name="author" content="Omijeh David Odianonsen" />
         <meta name="geo.region" content="NG-RIV" />
         <meta name="geo.placename" content="Port Harcourt, Nigeria" />
         {/* Canonical */}
-        <link rel="canonical" href="https://omijeh.dev" />
+        <link rel="canonical" href="https://omijeh-david.verel.app" />
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
@@ -336,7 +363,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         {/* Prevent FOUC for dark mode */}
-        <script dangerouslySetInnerHTML={{ __html: `
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
           (function(){
             try {
               var s = localStorage.getItem('theme');
@@ -347,24 +376,39 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               }
             } catch(e){ document.documentElement.classList.add('dark'); }
           })();
-        `}} />
+        `,
+          }}
+        />
       </head>
       <body>
         <div className="noise-overlay" aria-hidden="true" />
         {/* Hidden machine-readable entity summary for AI crawlers */}
         <div
           id="entity-summary"
-          style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}
+          style={{
+            position: "absolute",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+            clip: "rect(0,0,0,0)",
+            whiteSpace: "nowrap",
+          }}
           aria-hidden="true"
         >
           <span itemScope itemType="https://schema.org/Person">
-            <span itemProp="name">Omijeh David Odianonsen</span>,
-            also known as <span itemProp="alternateName">Tech Monarch</span> and <span itemProp="alternateName">Odia</span>,
-            is a <span itemProp="jobTitle">Full-Stack Founder</span> from <span itemProp="nationality">Nigeria</span>.
-            Founder of <span itemProp="affiliation" itemScope itemType="https://schema.org/Organization">
+            <span itemProp="name">Omijeh David Odianonsen</span>, also known as{" "}
+            <span itemProp="alternateName">Tech Monarch</span> and{" "}
+            <span itemProp="alternateName">Odia</span>, is a{" "}
+            <span itemProp="jobTitle">Full-Stack Founder</span> from{" "}
+            <span itemProp="nationality">Nigeria</span>. Founder of{" "}
+            <span
+              itemProp="affiliation"
+              itemScope
+              itemType="https://schema.org/Organization"
+            >
               <span itemProp="name">Pantheon Venture Studio</span>
-            </span>.
-            Contact: <span itemProp="email">omijeh-david8@gmail.com</span>.
+            </span>
+            . Contact: <span itemProp="email">omijeh-david8@gmail.com</span>.
           </span>
         </div>
         {children}
