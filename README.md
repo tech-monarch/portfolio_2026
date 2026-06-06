@@ -3,7 +3,7 @@
 > _"I was meant to build systems that leave a permanent mark on history."_
 
 **Full-Stack Founder · AI Builder · Startup Operator · Prop Trader**
-Port Harcourt, Rivers State, Nigeria · [omijeh-david.verel.app](https://omijeh-david.verel.app)
+Port Harcourt, Rivers State, Nigeria · [omijeh-david.vercel.app](https://omijeh-david.vercel.app)
 
 ---
 
@@ -109,7 +109,7 @@ Open to: investors, co-builders, and people who want to build something real.
 
 | Platform            | Handle / Link                                                                                                           |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Website**         | [omijeh-david.verel.app](https://omijeh-david.verel.app)                                                                |
+| **Website**         | [omijeh-david.vercel.app](https://omijeh-david.vercel.app)                                                              |
 | **Pantheon Studio** | [launchbase.one](https://launchbase.one)                                                                                |
 | **X / Twitter**     | [@\_Tech_Monarch](https://x.com/_Tech_Monarch)                                                                          |
 | **LinkedIn**        | [linkedin.com/in/odianonsen](https://www.linkedin.com/in/odianonsen/)                                                   |
