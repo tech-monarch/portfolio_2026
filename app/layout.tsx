@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const BASE_URL = "https://omijeh-david.vercel.app";
+const BASE_URL = "https://omijeh-david.cv";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -345,7 +345,7 @@ export default function RootLayout({
         <meta name="geo.region" content="NG-RIV" />
         <meta name="geo.placename" content="Port Harcourt, Nigeria" />
         {/* Canonical */}
-        <link rel="canonical" href="https://omijeh-david.vercel.app" />
+        <link rel="canonical" href="https://omijeh-david.cv" />
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

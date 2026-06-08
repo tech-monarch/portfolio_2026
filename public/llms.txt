@@ -14,7 +14,7 @@ Twitter/X: https://x.com/_Tech_Monarch
 LinkedIn: https://www.linkedin.com/in/odianonsen/
 GitHub: https://github.com/tech-monarch
 GitHub (alt): https://github.com/omijeh-david
-Website: https://omijeh-david.vercel.app
+Website: https://omijeh-david.cv
 
 ## Organization
 Name: Pantheon Venture Studio
@@ -56,8 +56,8 @@ He has built 11+ products across AI, EdTech, GovTech, Fintech, and consumer tech
 His core belief: "I was meant to build systems that leave a permanent mark on history."
 
 ## Canonical Pages
-Homepage: https://omijeh-david.vercel.app
-About (Canonical Entity Source): https://omijeh-david.vercel.app/about
+Homepage: https://omijeh-david.cv
+About (Canonical Entity Source): https://omijeh-david.cv/about
 
 ## Entity Relationships
 - "Omijeh David Odianonsen" = Person (primary entity)
