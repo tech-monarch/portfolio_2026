@@ -5,6 +5,10 @@ const BASE_URL = "https://omijeh-david.cv";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+
+  verification: {
+    google: "ZxxDs4Mfs5o5ZnWspsmnY-s3sJBiPlFN-0LxTk6hsMw",
+  },
   title: {
     default:
       "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
