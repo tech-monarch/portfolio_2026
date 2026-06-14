@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   title: {
     default:
-      "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
+      "Omijeh David Odianonsen | Full-Stack Founder · Pantheon Venture Studio",
     template: "%s | Omijeh David Odianonsen",
   },
   description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     title:
-      "Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch · Pantheon Venture Studio",
+      "Omijeh David Odianonsen | Full-Stack Founder · Pantheon Venture Studio",
     description:
       "Nigerian full-stack founder, AI builder, and startup operator. Founder of Pantheon Venture Studio. 11+ products shipped across AI, EdTech, GovTech, Fintech, and consumer tech.",
     url: BASE_URL,
@@ -349,7 +349,7 @@ export default function RootLayout({
         <meta name="geo.region" content="NG-RIV" />
         <meta name="geo.placename" content="Port Harcourt, Nigeria" />
         {/* Canonical */}
-        <link rel="canonical" href="https://omijeh-david.cv" />
+        {/* <link rel="canonical" href="https://omijeh-david.cv" /> */}
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
