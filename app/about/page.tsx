@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AboutPageClient from "./AboutPageClient";
 
-const BASE_URL = "https://omijeh-david.vercel.app";
+const BASE_URL = "https://omijeh-david.cv";
 
 export const metadata: Metadata = {
   title: "About — Omijeh David Odianonsen | Full-Stack Founder · Tech Monarch",
